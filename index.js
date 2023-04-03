@@ -8,7 +8,9 @@ const cors = require("cors")
 
 const connection=require("./config/db")
 
-app.use(cors())
+app.use(cors({origin:"*"}))
+
+
 
 const login=require("./Routes/LoginRoute")
 const jobposting = require('./Routes/JobPostingRoute')

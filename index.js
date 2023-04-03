@@ -8,7 +8,7 @@ const cors = require("cors")
 
 const connection=require("./config/db")
 
-app.use(cors({origin:"https://famous-fish-gear.cyclic.app"}))
+app.use(cors())
 
 
 
